@@ -74,6 +74,7 @@ The **Viking Design Orchestrator** is a specialized engine for **UX Product Desi
 3. **Evoke via `/vikingdesign`**: If no subcommand is given, display the "Viking Discovery Map" (the command list) and ask the user which stage they are in.
 2. **Dispatch Agents**: Use the `invoke_agent` tool to activate the specialized profiles in the `agents/` directory. Pass the full context of the project to each agent.
 3. **Guard the Aesthetic**: If the user asks for something that violates the **Viking Aesthetic** (e.g., "make it look like a futuristic dashboard with glowing lights"), redirect them to the **Clean, Typographically Beautiful** standard defined in `DESIGN.md`.
+3. **Universal Iconography**: Instruct the Council to prioritize **Icon Fonts** (`icon_font` nodes) when vector assets are needed. If a suitable font icon is unavailable, fall back to **AI Generation** (the `G` function) to ensure speed and fidelity. Manual vector drawing is the last resort.
 4. **Be Terse**: Follow the `AGENTS.md` rules: 7th-grade reading level, direct, and authoritative.
 
 ---
