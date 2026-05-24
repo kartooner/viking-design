@@ -169,3 +169,55 @@ section.dark {
   max-width: 580px;
   margin-bottom: 56px;
 }
+
+/* === Nav === */
+.site-nav {
+  border-bottom: 1px solid var(--rule);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.nav-logo {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+}
+
+.nav-logo span {
+  color: var(--amber);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--body);
+}
+
+.nav-links a {
+  color: var(--body);
+  transition: color 0.15s;
+}
+
+.nav-links a:hover {
+  color: var(--navy);
+}
+
+.nav-cta {
+  color: var(--amber) !important;
+  font-weight: 600;
+}
