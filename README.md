@@ -24,22 +24,25 @@ Viking follows a disciplined **Systems First, Surfaces Second** philosophy:
 
 ## 🚀 Installation
 
-To add the Viking Design Framework to your Gemini CLI or Claude Code environment:
+To add the Viking Design Framework to your Gemini CLI or Claude Code environment, run the universal installer:
 
 ```bash
-# Clone the repo into your extensions directory
-git clone https://github.com/yourusername/viking-design-framework.git ~/.gemini/extensions/viking-design
+# Install via npx (Direct from GitHub)
+npx @eriksagen/viking-design setup
+
+# OR install globally via npm
+npm install -g @eriksagen/viking-design
 ```
 
 ## 🛠️ Usage
 
-Evoke the framework within your CLI:
+Evoke the framework within your CLI or terminal:
 
-- `/vikingdesign` - Open the Discovery Map.
-- `/vikingdesign gate` - Run the 5 Gates fit assessment.
-- `/vikingdesign map` - Perform logic mapping.
-- `/vikingdesign chain` - Activate the full 1-7 agent chain.
-- `/vikingdesign audit` - Run the aesthetic/AI Slop audit.
+- `viking-design` - Open the Discovery Map.
+- `viking-design gate` - 2. Run the 5 Gates value assessment.
+- `viking-design map` - 4. Perform logic mapping (Things, States, Rules).
+- `viking-design chain` - 1-7. Activate the full sequential Council chain.
+- `viking-design audit` - 1. Run the aesthetic/AI Slop audit.
 
 ---
 

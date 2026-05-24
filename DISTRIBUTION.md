@@ -23,57 +23,43 @@ viking-design-framework/
 
 ## 2. The "NPM Install" Experience
 
-To allow users to install it via `npm` or `npx`, you have two main paths:
+The Viking Design Framework is optimized for `npm` and `npx` distribution.
 
-### Path A: The `npx` Skill Adder (Recommended)
-You can create a small script that clones your repo directly into the user's `.gemini/extensions` or `.claude/skills` folder.
+### Option A: The `npx` Installer (Recommended for new users)
+Users can run your methodology without a permanent global install:
 
-**Command Example:**
-`npx viking-design add`
+**Command:**
+`npx @eriksagen/viking-design setup`
 
-### Path B: Global Skill Registration
-If you want it to work exactly like Impeccably, your `package.json` should define a binary that copies the files to the local machine's skill directory.
+This executes `bin/install.js`, which:
+- Detects the OS (Windows/Mac/Linux).
+- Creates the local `.gemini/extensions/viking-design` directory.
+- Configures the global `viking-design` command path.
 
-**Example `package.json` snippet:**
-```json
-{
-  "name": "@yourname/viking-design",
-  "version": "1.0.0",
-  "bin": {
-    "viking-design": "./bin/install.js"
-  }
-}
-```
+### Option B: Global NPM Install
+For frequent contributors or power users:
+
+**Command:**
+`npm install -g @eriksagen/viking-design`
 
 ## 3. How to Use (User Instructions)
 
 Include this in your `README.md` so people know how to evoke it:
 
-### Installation
-```bash
-npm install -g @yourname/viking-design
-# or
-npx @yourname/viking-design setup
-```
-
 ### Usage in Gemini CLI / Claude Code
 Once installed, you can evoke the framework using:
 
 **1. The Hub:**
-`> /vikingdesign`
+`> viking-design`
 *Displays the command menu and guides you through the process.*
 
 **2. The 5 Gates:**
-`> /vikingdesign gate`
-*Starts the interview to determine if your project actually needs AI.*
+`> viking-design gate`
+*Activates **2. Mimir** to determine if your project actually needs AI.*
 
-**3. System Mapping:**
-`> /vikingdesign map`
-*Activates the Viking Architect to map Things, States, and Rules.*
-
-**4. The Skill Chain:**
-`> /vikingdesign chain`
-*Hands off the project through the specialized agent roles (Director -> Strategist -> Architect).*
+**3. The Skill Chain:**
+`> viking-design chain`
+*Hands off the project through the **Nordic High Council** (1. Odin -> 7. Thor).*
 
 ---
 
