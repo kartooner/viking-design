@@ -18,7 +18,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ---
 
-## Conversion Funnel
+## Conversion funnel
 
 1. Understand the problem Viking solves
 2. Understand how Viking solves it
@@ -28,7 +28,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ---
 
-## Technical Delivery
+## Technical delivery
 
 - Two files: `index.html` and `style.css`
 - No build tools, no dependencies except Google Fonts
@@ -37,7 +37,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ---
 
-## Visual Direction
+## Visual direction
 
 - **Tone:** Modern, clean, grounded. No AI-isms in aesthetics or copy.
 - **Colors:**
@@ -54,7 +54,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ---
 
-## Page Structure
+## Page structure
 
 ### Nav
 - Wordmark left: `Viking Design` (Space Grotesk, bold, "Design" in amber)
@@ -158,7 +158,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ---
 
-## File Structure
+## File structure
 
 The landing page lives in two places:
 
@@ -185,7 +185,7 @@ All asset paths (fonts, any future images) must be absolute URLs or root-relativ
 
 ---
 
-## Out of Scope
+## Out of scope
 
 - JavaScript interactions (copy-to-clipboard, smooth scroll)
 - Mobile responsiveness (can be added later)
