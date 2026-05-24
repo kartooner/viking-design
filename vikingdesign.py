@@ -30,6 +30,10 @@ def main():
         print("Invoking 4. Heimdall (Systems Architect)... [Reference: reference/map.md]")
     elif cmd == "shape":
         print("Invoking 5. Loki (Flow Designer)... [Reference: reference/map.md]")
+    elif cmd == "audit":
+        print("Invoking 1. Odin (Creative Director)... [Reference: agents/viking-director.md]")
+    elif cmd == "polish":
+        print("Invoking 1. Odin (Creative Director)... [Reference: agents/viking-director.md]")
     elif cmd == "chain":
         print("Activating full Viking Creative Skill Chain (1. Odin -> 2. Mimir -> 3. Tyr -> 4. Heimdall -> 5. Loki -> 6. Bragi -> 7. Thor)...")
     elif cmd == "craft":
