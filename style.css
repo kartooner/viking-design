@@ -336,3 +336,80 @@ h1.nav-logo {
   color: var(--amber);
   margin-bottom: 8px;
 }
+
+/* === CTA section === */
+.dark h2,
+.dark p,
+.dark a {
+  color: #fff;
+}
+
+.cta-heading {
+  color: #fff;
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+.cta-subtext {
+  color: #9999bb;
+  max-width: 480px;
+  font-size: 16px;
+  margin-bottom: 36px;
+}
+
+.cta-install {
+  background: #111122;
+  border-radius: 6px;
+  padding: 16px 22px;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.cta-cmd {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.cta-links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.cta-links a {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #9999bb;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.cta-links a:hover {
+  color: #fff;
+}
+
+.cta-divider {
+  border: none;
+  border-top: 1px solid #2a2a44;
+  margin-bottom: 28px;
+}
+
+.cta-attribution {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #8888aa;
+  line-height: 1.7;
+}
+
+.cta-attribution a {
+  color: #8888aa;
+  text-decoration: underline;
+}
+
+.cta-attribution a:hover {
+  color: #aaaacc;
+}
