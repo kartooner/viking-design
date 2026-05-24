@@ -48,6 +48,8 @@ A static landing page for the Viking Design Framework, stored in the project fol
   - Off-white background (used for alternating sections): `#f7f5f2`
   - Dark CTA background: `#1a1a2e`
 - **No:** all-caps text, em dashes, colored card borders, icon cards, gradient backgrounds
+- **Heading case:** Sentence case throughout. First word capitalized, rest lowercase except proper nouns (e.g. "The High Council", "The 5 Gates", "Things, States, Rules")
+- **Nav items:** Sentence case. "The council" not "The Council" unless it is a proper name
 - **Logo:** Clean wordmark — "Viking **Design**" with "Design" in amber. Icon TBD (download Viking ship from Flaticon: flaticon.com/free-icon/viking-ship_2483972)
 
 ---
@@ -119,6 +121,7 @@ A static landing page for the Viking Design Framework, stored in the project fol
 **Background:** White
 
 **Heading:** "Seven roles. One sequence."
+
 
 **Body:**
 > Each council member owns a step in the process. Work flows in one direction and nothing ships until every role has signed off.
