@@ -24,14 +24,14 @@ Viking follows a disciplined **Systems First, Surfaces Second** philosophy:
 
 ## 🚀 Installation
 
-To add the Viking Design Framework to your Gemini CLI or Claude Code environment, run the universal installer:
+To add the Viking Design Framework to your Gemini CLI or Claude Code environment, use the standardized skill installer:
 
 ```bash
-# Install via npx (Direct from GitHub)
-npx @eriksagen/viking-design setup
+# Standard installation (Recommended)
+npx skills add eriksagen/viking-design
 
-# OR install globally via npm
-npm install -g @eriksagen/viking-design
+# OR install via universal installer
+npx @eriksagen/viking-design setup
 ```
 
 ## 🛠️ Usage
