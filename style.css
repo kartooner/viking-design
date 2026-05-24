@@ -187,23 +187,10 @@ section.dark {
   padding-bottom: 18px;
 }
 
-.nav-logo {
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 16px;
-  color: var(--navy);
-  letter-spacing: -0.5px;
+.nav-inner--centered {
+  justify-content: center;
 }
 
-.nav-logo span {
-  color: var(--amber);
-}
-
-h1.nav-logo {
-  font-size: 16px;
-  line-height: 1;
-  letter-spacing: -0.5px;
-}
 
 .nav-links {
   display: flex;
@@ -231,6 +218,19 @@ h1.nav-logo {
 /* === Hero === */
 .hero {
   padding: 80px 0 72px;
+}
+
+.hero-brand {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--quiet);
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.hero-brand span {
+  color: var(--amber);
 }
 
 .hero-headline {
