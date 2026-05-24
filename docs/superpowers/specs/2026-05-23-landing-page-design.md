@@ -160,15 +160,28 @@ A static landing page for the Viking Design Framework, stored in the project fol
 
 ## File Structure
 
+The landing page lives in two places:
+
+1. **This repo** — as the canonical source
+2. **kartooner/kartoonerdotcom** — deployed at `/framework/viking/`
+
 ```
-Viking design framework/
+Viking design framework/        ← this repo
   index.html
   style.css
   docs/
     superpowers/
       specs/
         2026-05-23-landing-page-design.md
+
+kartooner/kartoonerdotcom       ← destination repo
+  framework/
+    viking/
+      index.html
+      style.css
 ```
+
+All asset paths (fonts, any future images) must be absolute URLs or root-relative paths that work under `/framework/viking/`. No relative paths that assume the page is at the site root.
 
 ---
 
