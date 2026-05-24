@@ -31,9 +31,12 @@ def main():
     elif cmd == "shape":
         print("Invoking 5. Loki (Flow Designer)... [Reference: reference/map.md]")
     elif cmd == "audit":
-        print("Invoking 1. Odin (Creative Director)... [Reference: agents/viking-director.md]")
-    elif cmd == "polish":
-        print("Invoking 1. Odin (Creative Director)... [Reference: agents/viking-director.md]")
+        print("🛡️  Activating Eye of Mimir (Deterministic Slop Detection)...")
+        os.system("node scripts/viking-detect.mjs .")
+        print("\nInvoking 1. Odin (Creative Director) for LLM Critique...")
+    elif cmd == "document":
+        print("🛡️  Activating Viking Documenter...")
+        os.system("node scripts/viking-document.mjs .")
     elif cmd == "chain":
         print("Activating full Viking Creative Skill Chain (1. Odin -> 2. Mimir -> 3. Tyr -> 4. Heimdall -> 5. Loki -> 6. Bragi -> 7. Thor)...")
     elif cmd == "craft":

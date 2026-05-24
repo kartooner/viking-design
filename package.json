@@ -5,7 +5,10 @@
   "main": "vikingdesign.py",
   "bin": {
     "viking-design": "bin/viking.js",
-    "vikingdesign": "bin/viking.js"
+    "vikingdesign": "bin/viking.js",
+    "viking-detect": "scripts/viking-detect.mjs",
+    "viking-document": "scripts/viking-document.mjs",
+    "viking-context": "scripts/viking-context.mjs"
   },
   "scripts": {
     "setup": "node bin/install.js",
