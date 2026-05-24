@@ -221,3 +221,53 @@ section.dark {
   color: var(--amber) !important;
   font-weight: 600;
 }
+
+/* === Hero === */
+.hero {
+  padding: 80px 0 72px;
+}
+
+.hero h1 {
+  margin-bottom: 22px;
+  max-width: 560px;
+}
+
+.hero h1 .accent {
+  color: var(--amber);
+}
+
+.hero-subtext {
+  font-size: 17px;
+  color: var(--body);
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.install-cmd {
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 6px;
+  letter-spacing: 0.2px;
+}
+
+.learn-link {
+  color: var(--amber);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.learn-link:hover {
+  text-decoration: underline;
+}
