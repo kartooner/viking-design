@@ -413,3 +413,43 @@ h1.nav-logo {
 .cta-attribution a:hover {
   color: #aaaacc;
 }
+
+/* === Commands === */
+.commands-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.command-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 20px 0;
+  border-top: 1px solid var(--rule-warm);
+}
+
+.command-item:last-child {
+  border-bottom: 1px solid var(--rule-warm);
+}
+
+.cmd-name {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  background: #edeae5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+}
+
+.cmd-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+  padding-top: 4px;
+}
