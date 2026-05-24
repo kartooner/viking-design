@@ -950,6 +950,109 @@ git commit -m "feat: add install CTA and footer"
 
 ---
 
+## Task 8b: Commands section
+
+**Files:**
+- Modify: `index.html`
+- Modify: `style.css`
+
+Add a commands section between The Council and the Install CTA, showing all available CLI commands.
+
+- [ ] **Step 1: Add commands section markup in `index.html`, replacing `<!-- remaining sections -->` after the council section**
+
+```html
+  <section id="commands" class="off-white">
+    <div class="container">
+      <p class="section-label">Usage</p>
+      <h2>Five commands. Start anywhere.</h2>
+      <p class="section-intro">
+        Once installed, run these in your Claude Code or Gemini CLI terminal.
+      </p>
+      <div class="commands-list">
+        <div class="command-item">
+          <code class="cmd-name">viking-design</code>
+          <p class="cmd-desc">Open the Discovery Map. Start here if you are new to the framework.</p>
+        </div>
+        <div class="command-item">
+          <code class="cmd-name">viking-design gate</code>
+          <p class="cmd-desc">Run the 5 Gates assessment. Determines whether AI is the right tool before you build anything.</p>
+        </div>
+        <div class="command-item">
+          <code class="cmd-name">viking-design map</code>
+          <p class="cmd-desc">Logic mapping. Walk through Things, States, and Rules for your product.</p>
+        </div>
+        <div class="command-item">
+          <code class="cmd-name">viking-design chain</code>
+          <p class="cmd-desc">Activate the full Council chain. Runs all seven roles in sequence from strategy to handoff.</p>
+        </div>
+        <div class="command-item">
+          <code class="cmd-name">viking-design audit</code>
+          <p class="cmd-desc">Run the AI Slop Test. Quality audit for aesthetics and design judgment before you ship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- remaining sections -->
+```
+
+- [ ] **Step 2: Append commands styles to style.css**
+
+```css
+/* === Commands === */
+.commands-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.command-item {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 20px 0;
+  border-top: 1px solid var(--rule-warm);
+}
+
+.command-item:last-child {
+  border-bottom: 1px solid var(--rule-warm);
+}
+
+.cmd-name {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  background: #edeae5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+}
+
+.cmd-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+  padding-top: 4px;
+}
+```
+
+- [ ] **Step 3: Verify in browser at http://localhost:8000**
+
+Expect: off-white section, "Usage" label in amber, heading, five command rows each showing the command in a dark pill on the left and a plain description on the right. Clean dividers.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add index.html style.css
+git commit -m "feat: add commands section"
+```
+
+---
+
 ## Task 9: Final quality pass
 
 **Files:**
