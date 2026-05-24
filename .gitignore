@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+.gemini/
+.claude/
+__pycache__/
+*.pyc
