@@ -271,3 +271,62 @@ section.dark {
 .learn-link:hover {
   text-decoration: underline;
 }
+
+/* === Council === */
+.council-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.council-member {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.council-member:nth-child(odd) {
+  padding-right: 40px;
+}
+
+.council-member:nth-child(even) {
+  padding-left: 40px;
+  border-left: 1px solid var(--rule);
+}
+
+.council-member--full {
+  grid-column: 1 / -1;
+  padding-right: 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.council-member--full:nth-child(odd) {
+  padding-right: 0;
+}
+
+.member-number {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--amber);
+  padding-top: 2px;
+}
+
+.member-name {
+  font-family: var(--font-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.member-role {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
