@@ -72,4 +72,4 @@ The **Viking Design Orchestrator** is a specialized engine for **UX Product Desi
 4. **Be Terse**: Follow the `AGENTS.md` rules: 7th-grade reading level, direct, and authoritative.
 
 ---
-*Credits: Synthesized from Impeccably, Design with Intent (ghaida/intent), and the personal AI-first UX methodology of John.*
+*Credits: Synthesized from Impeccably, Design with Intent (ghaida/intent), and the personal AI-first UX methodology of Erik Sagen.*
