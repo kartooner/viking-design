@@ -1,69 +1,55 @@
-# Viking Design Framework: GitHub Distribution Guide
+# Viking Design Framework: Distribution Guide
 
-To make the Viking Design Framework "installable" like Design with Intent or Impeccably, you need to structure it as a distributable package.
+How Viking gets from this repo onto someone's machine.
 
-## 1. Preparation for GitHub
+## 1. Repository layout
 
-Structure your repository like this:
+The repo root is the skill. Anything that installs it copies these folders as-is:
 
 ```text
-viking-design-framework/
-├── SKILL.md                 # Core framework instructions
-├── AGENTS.md                # Global agent instructions
-├── reference/               # Detailed methodology guides
-│   ├── gate.md
-│   ├── map.md
-│   └── skill-chain.md
-├── agents/                  # Specialized agent profiles
-│   ├── viking-director.md
-│   └── viking-architect.md
-├── scripts/                 # (Optional) Automation scripts
-└── package.json             # Necessary for npm distribution
+viking-design/
+├── SKILL.md       # Orchestrator: the entry point the AI reads
+├── agents/        # The seven High Council profiles
+├── reference/     # 5 Gates, system mapping, skill chain, tooling, UX canon
+├── examples/      # Worked runs of the chain
+├── scripts/       # Slop detector, DESIGN.md drafter, context loader
+├── bin/           # Node CLI and installer
+└── tests/         # Smoke tests (npm test)
 ```
 
-## 2. The "NPM Install" Experience
+Node 18 or newer is the only requirement. There is no Python step.
 
-The Viking Design Framework is optimized for `npm` and `npx` distribution.
+## 2. Install options
 
-### Option A: The `npx` Installer (Recommended for new users)
-Users can run your methodology without a permanent global install:
+### Option A: Skills CLI (recommended)
+```bash
+npx skills add kartooner/viking-design
+```
+Pulls the repo from GitHub and registers it as a skill for Claude Code or Gemini CLI.
 
-**Command:**
-`npx @eriksagen/viking-design setup`
+### Option B: Clone and run the installer
+```bash
+git clone https://github.com/kartooner/viking-design.git
+cd viking-design
+npm run setup
+```
+`bin/install.js` copies the skill into `~/.claude/skills/viking-design`. Run it again to update.
 
-This executes `bin/install.js`, which:
-- Detects the OS (Windows/Mac/Linux).
-- Creates the local `.gemini/extensions/viking-design` directory.
-- Configures the global `viking-design` command path.
+## 3. Usage
 
-### Option B: Global NPM Install
-For frequent contributors or power users:
+Inside Claude Code or Gemini CLI, type `/viking-design` to open the Discovery Map. Every subcommand is listed in `SKILL.md` and the README.
 
-**Command:**
-`npm install -g @eriksagen/viking-design`
+Outside an AI tool, the CLI prints the same map and runs the scripts:
 
-## 3. How to Use (User Instructions)
+```bash
+npx viking-design            # Discovery Map
+npx viking-design audit src  # Slop detector on a folder
+npx viking-design document . # Draft a DESIGN.md
+```
 
-Include this in your `README.md` so people know how to evoke it:
+## 4. Before a release
 
-### Usage in Gemini CLI / Claude Code
-Once installed, you can evoke the framework using:
-
-**1. The Hub:**
-`> viking-design`
-*Displays the command menu and guides you through the process.*
-
-**2. The 5 Gates:**
-`> viking-design gate`
-*Activates **2. Mimir** to determine if your project actually needs AI.*
-
-**3. The Skill Chain:**
-`> viking-design chain`
-*Hands off the project through the **Nordic High Council** (1. Odin -> 7. Thor).*
-
----
-
-## 4. Final Polish for Public Release
-1. **License**: Add an MIT license file.
-2. **Credits**: Ensure the `SKILL.md` footer explicitly credits Impeccably and Design with Intent.
-3. **Screenshots/Examples**: Add a `docs/` folder with examples of a "Viking-styled" `DESIGN.md` output.
+1. Run `npm test`.
+2. Bump `version` in `package.json`.
+3. Add an entry to `CHANGELOG.md`.
+4. Keep the landing page at kartooner.com/frameworks/viking in step with the README.

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Viking Design Framework Context Loader
  * Scans for PRODUCT.md and DESIGN.md to provide project context.
@@ -5,6 +6,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const PRODUCT_NAMES = ['PRODUCT.md', 'Product.md', 'product.md'];
 const DESIGN_NAMES = ['DESIGN.md', 'Design.md', 'design.md'];
@@ -46,6 +48,6 @@ function firstExisting(dir, names) {
   return null;
 }
 
-if (process.argv[1]?.endsWith('viking-context.mjs')) {
+if (process.argv[1] && fs.realpathSync(process.argv[1]) === fileURLToPath(import.meta.url)) {
   console.log(JSON.stringify(loadContext(), null, 2));
 }

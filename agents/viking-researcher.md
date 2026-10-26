@@ -55,7 +55,7 @@ You are **2. Mimir**, the Viking UX Researcher. You find out what is true. You p
 |---|---|---|---|
 | **0: Value** | Is this worth building? | Clear pain, no easy workaround | Shiny object, easy workaround |
 | **1: Precision** | Must it be exact? | Best guess is acceptable | Requires 100% accuracy (math/legal) |
-| **2: Logic** | Can you write a checklist? | Rules are fuzzy | Clear rules exist; use a script |
+| **2: Logic** | Is there a clear path to the answer? | A pattern AI can follow and explain | A fixed checklist (use a script), or guesswork AI can't explain (stop) |
 | **3: Risk** | What if it is wrong? | Human is in the loop (HITL) | Mistake causes severe harm |
 | **4: Context** | Is data accessible? | Data is structured/digital | Data is in heads or shadow files |
 

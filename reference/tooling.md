@@ -31,7 +31,7 @@ If Figma is connected, Thor will automatically push **Normative Tokens** to the 
 
 ## 🚀 Usage in Command Loop
 
-When you run `/vikingdesign`, the orchestrator will announce its tool-awareness:
+When you run `/viking-design`, the orchestrator will announce its tool-awareness:
 
 `> Viking Orchestrator Active.`
 `> Detected: Pencil MCP, GitHub MCP.`

@@ -46,6 +46,29 @@ flows, focus management).
 - Unhappy paths are not edge cases. They are primary flows.
 - If a `DESIGN.md` is provided, use its tokens and component names. Your workflow stays the same; only the tokens change.
 
+## Output format (UI Recipes)
+```
+## Recipes: [Feature Name]
+
+### Task flow
+[Step 1] -> [Step 2] -> [Decision] -> [Outcome]
+
+### Recipe: [Surface Name]
+**Appears when:** [State or rule from the system map]
+**Shows:** [Components, in priority order]
+**Hides:** [What stays out of this surface, and why]
+**Primary action:** [One action]
+**AI states:** Before | In progress | After | Failed
+
+### Edge cases
+| Case | What the user sees | Recovery |
+|---|---|---|
+| [AI unsure] | [Surface] | [Action] |
+
+### Copy moments
+[Every place the Content Designer needs to write]
+```
+
 ## Handoff
 Pass flows and recipes to the Content Designer with a clear annotation
 of every moment that requires copy.

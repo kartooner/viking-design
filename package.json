@@ -1,18 +1,20 @@
 {
   "name": "viking-design-framework",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An AI-intent-first UX product design methodology and agentic framework.",
-  "main": "vikingdesign.py",
+  "main": "bin/viking.js",
   "bin": {
     "viking-design": "bin/viking.js",
-    "vikingdesign": "bin/viking.js",
     "viking-detect": "scripts/viking-detect.mjs",
     "viking-document": "scripts/viking-document.mjs",
     "viking-context": "scripts/viking-context.mjs"
   },
   "scripts": {
     "setup": "node bin/install.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [
     "ai",
@@ -24,5 +26,10 @@
     "orchestrator"
   ],
   "author": "Erik Sagen",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://www.kartooner.com/frameworks/viking/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kartooner/viking-design.git"
+  }
 }

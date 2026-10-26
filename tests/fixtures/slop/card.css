@@ -1,0 +1,7 @@
+.card {
+  border-left: 4px solid #8b5cf6;
+}
+
+.card-title {
+  background-clip: text;
+}

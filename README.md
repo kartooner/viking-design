@@ -40,6 +40,10 @@ npx skills add kartooner/viking-design
 
 Works with **Claude Code CLI** and **Gemini CLI**. Viking auto-detects MCP tools in your environment (Figma, Pencil, Miro) and adapts its output accordingly.
 
+Prefer to clone? `git clone` this repo, then run `npm run setup` to copy the skill into `~/.claude/skills/viking-design`. Node 18+ is the only requirement.
+
+Learn more at **[kartooner.com/frameworks/viking](https://www.kartooner.com/frameworks/viking/)**.
+
 ---
 
 ## 🛠️ Commands
@@ -50,11 +54,22 @@ Works with **Claude Code CLI** and **Gemini CLI**. Viking auto-detects MCP tools
 | `/viking-design gate` | Mimir | Run the 5 Gates AI fit assessment |
 | `/viking-design frame` | Tyr | Problem framing: brief, user hats, opportunity sizing |
 | `/viking-design map` | Heimdall | Logic mapping: Things, States, and Rules |
-| `/viking-design chain` | All | Full Council chain from strategy to handoff |
+| `/viking-design shape` | Loki | Task flows and generative UI recipes |
 | `/viking-design content` | Bragi | UX copy using the Sandwich Pattern |
+| `/viking-design craft` | Thor | Component contracts, acceptance criteria, QA checklists |
+| `/viking-design chain` | All | Full Council chain from strategy to handoff |
 | `/viking-design audit` | Odin | Run the AI Slop Test quality audit |
+| `/viking-design document` | Tool | Draft a `DESIGN.md` from your project's existing tokens |
 
 No CLI? Browse the agents and paste any prompt directly into Claude, Copilot, or ChatGPT.
+
+The same commands work from a terminal (`npx viking-design audit src`) for the slop detector and the `DESIGN.md` drafter.
+
+---
+
+## 🧭 See it in action
+
+[`examples/expense-receipts.md`](./examples/expense-receipts.md) runs one feature through the whole chain: "Add AI so people can snap a receipt and be done." The 5 Gates split that ask into four jobs. AI handles one, helps with one, and stays out of two. Every deliverable from every role is in the file.
 
 ---
 
@@ -98,9 +113,12 @@ viking-design/
 │   ├── map.md                # Things, States, Rules guide
 │   ├── skill-chain.md        # Council sequence and role responsibilities
 │   └── tooling.md            # MCP tool detection and strategy
-├── bin/                      # CLI installer
-├── scripts/                  # Detection and document utilities
-└── docs/                     # Distribution and planning docs
+├── examples/                 # Worked runs of the full chain
+├── bin/                      # CLI and installer (Node 18+)
+├── scripts/                  # Slop detector, DESIGN.md drafter, context loader
+├── tests/                    # Smoke tests: npm test
+├── docs/                     # Distribution and planning docs
+└── CHANGELOG.md
 ```
 
 ---
@@ -109,7 +127,7 @@ viking-design/
 
 The **Viking Design Framework** is a synthesis created by **Erik Sagen**. It builds on:
 
-- **[Impeccable Design Framework](https://github.com/impeccable-design)** — visual laws, token-normative standards, and the AI Slop Test methodology
+- **[Impeccable](https://github.com/pbakaus/impeccable)** — visual laws, token-normative standards, and the AI Slop Test methodology
 - **[Design with Intent](https://designwithintent.ai/)** — intent-first strategic philosophy and behavioral mapping
 
 The **5 Gates**, **Things, States, Rules** orchestration logic, and the **High Council** agentic chain are original contributions by Erik Sagen.
